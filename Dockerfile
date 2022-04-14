@@ -8,7 +8,7 @@ RUN apt-get update && apt-get install -y cmake libgtest-dev libboost-test-dev g+
 
 RUN apt-get update && \
     apt-get install -y git-core && \
-    git clone https://github.com/mz-automation/libiec61850.git /libiec61850 && \
+    git clone https://github.com/mz-automation/libiec61850.git -b v1.5 /libiec61850 && \
     cd /libiec61850 && \
     mkdir build && \
     cd build && \
